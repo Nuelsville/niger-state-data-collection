@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
 	<meta charset="utf-8">
 	<title>Wizard V2</title>
@@ -23,10 +24,14 @@
 		<div class="open"><i class="fas fa-cog"></i></div>
 		<h4>COLOR OPTION</h4>
 		<ul>
-			<li><a class="color-2" onclick="setActiveStyleSheet('color-2'); return false;" href="#"><i class="fas fa-cog"></i></a> </li>
-			<li><a class="color-3" onclick="setActiveStyleSheet('color-3'); return false;" href="#"><i class="fas fa-cog"></i></a> </li>
-			<li><a class="color-4" onclick="setActiveStyleSheet('color-4'); return false;" href="#"><i class="fas fa-cog"></i></a> </li>
-			<li><a class="color-5" onclick="setActiveStyleSheet('color-5'); return false;" href="#"><i class="fas fa-cog"></i></a> </li>
+			<li><a class="color-2" onclick="setActiveStyleSheet('color-2'); return false;" href="#"><i
+						class="fas fa-cog"></i></a> </li>
+			<li><a class="color-3" onclick="setActiveStyleSheet('color-3'); return false;" href="#"><i
+						class="fas fa-cog"></i></a> </li>
+			<li><a class="color-4" onclick="setActiveStyleSheet('color-4'); return false;" href="#"><i
+						class="fas fa-cog"></i></a> </li>
+			<li><a class="color-5" onclick="setActiveStyleSheet('color-5'); return false;" href="#"><i
+						class="fas fa-cog"></i></a> </li>
 		</ul>
 	</div>
 	<div class="clearfix"></div>
@@ -53,7 +58,7 @@
 			<div class="row">
 				<div class="col-12 col-lg-12 m-auto">
 					<form class="multisteps-form__form position-relative clearfix" action="#" method="post" id="wizard">
-						
+
 						<!--single form panel-->
 						<div class="multisteps-form__panel js-active" data-animation="slideVert">
 							<div class="inner pb-100">
@@ -71,156 +76,187 @@
 									<p>Please Fill all Personal Information.</p>
 								</div>
 								<div class="wizard-content-form">
-  <div class="wizard-form-field">
-    <!-- Title Dropdown -->
-    <div class="wizard-form-input position-relative form-group has-float-label">
-      <select class="form-control" name="title">
-        <option value="">Title</option>
-        <option value="Mr.">Mr.</option>
-        <option value="Mrs.">Mrs.</option>
-        <option value="Miss">Miss</option>
-        <option value="Phd">Phd</option>
-        <!-- Add more options as needed -->
-      </select>
-      <label>Title</label>
-    </div>
+									<div class="wizard-form-field">
+										<!-- Title Dropdown -->
+										<div class="wizard-form-input position-relative form-group has-float-label">
+											<select class="form-control" name="title">
+												<option value="">Title</option>
+												<option value="Mr.">Mr.</option>
+												<option value="Mrs.">Mrs.</option>
+												<option value="Miss">Miss</option>
+												<option value="Phd">Phd</option>
+												<!-- Add more options as needed -->
+											</select>
+											<label>Title</label>
+										</div>
 
-    <!-- Surname -->
-    <div class="wizard-form-input position-relative form-group has-float-label">
-      <input type="text" class="form-control" name="surname" placeholder="Surname">
-      <label>Surname</label>
-    </div>
+										<!-- Surname -->
+										<div class="wizard-form-input position-relative form-group has-float-label">
+											<input type="text" class="form-control" name="surname"
+												placeholder="Surname">
+											<label>Surname</label>
+										</div>
 
-    <!-- First Name -->
-    <div class="wizard-form-input position-relative form-group has-float-label">
-      <input type="text" class="form-control" name="firstName" placeholder="First Name">
-      <label>First Name</label>
-    </div>
+										<!-- First Name -->
+										<div class="wizard-form-input position-relative form-group has-float-label">
+											<input type="text" class="form-control" name="firstName"
+												placeholder="First Name">
+											<label>First Name</label>
+										</div>
 
-    <!-- Middle Name -->
-    <div class="wizard-form-input position-relative form-group has-float-label">
-      <input type="text" class="form-control" name="middleName" placeholder="Middle Name">
-      <label>Middle Name</label>
-    </div>
+										<!-- Middle Name -->
+										<div class="wizard-form-input position-relative form-group has-float-label">
+											<input type="text" class="form-control" name="middleName"
+												placeholder="Middle Name">
+											<label>Middle Name</label>
+										</div>
 
-    <!-- Gender -->
-    <div class="wizard-form-input position-relative form-group has-float-label">
-      <label>Gender</label>
-      <label>
-        <input type="radio" value="Male" name="gender">
-        <span class="checkmark">Male</span>
-      </label>
-      <label>
-        <input type="radio" value="Female" name="gender">
-        <span class="checkmark">Female</span>
-      </label>
-    </div>
+										<!-- Gender -->
+										<!-- <div class="wizard-form-input position-relative form-group has-float-label">
+											<label>Gender</label>
+											<label>
+												<input type="radio" value="Male" name="gender">
+												<span class="checkmark">Male</span>
+											</label>
+											<label>
+												<input type="radio" value="Female" name="gender">
+												<span class="checkmark">Female</span>
+											</label>
+										</div> -->
 
-    <!-- Date of Birth -->
-    <div class="wizard-form-input position-relative form-group has-float-label">
-      <input type="date" class="form-control" name="dateOfBirth">
-      <label>Date of Birth</label>
-    </div>
+										<!-- Date of Birth -->
+										<div class="wizard-form-input position-relative form-group has-float-label">
+											<input type="date" class="form-control" name="dateOfBirth">
+											<label>Date of Birth</label>
+										</div>
 
-    <!-- Marital Status Dropdown -->
-    <div class="wizard-form-input position-relative form-group has-float-label">
-      <select class="form-control" name="maritalStatus">
-        <option value="">Marital Status</option>
-        <option value="Single">Single</option>
-        <option value="Married">Married</option>
-        <option value="Divorced">Divorced</option>
-        <option value="Widowed">Widowed</option>
-        <!-- Add more options as needed -->
-      </select>
-      <label>Marital Status</label>
-    </div>
+										<!-- Marital Status Dropdown -->
+										<div class="wizard-form-input position-relative form-group has-float-label">
+											<select class="form-control" name="maritalStatus">
+												<option value="">Marital Status</option>
+												<option value="Single">Single</option>
+												<option value="Married">Married</option>
+												<option value="Divorced">Divorced</option>
+												<option value="Widowed">Widowed</option>
+												<!-- Add more options as needed -->
+											</select>
+											<label>Marital Status</label>
+										</div>
 
-    <!-- Number of Children -->
-    <div class="wizard-form-input position-relative form-group has-float-label">
-      <input type="number" class="form-control" name="numberOfChildren" placeholder="Number of Children">
-      <label>Number of Children</label>
-    </div>
+										<!-- Number of Children -->
+										<div class="wizard-form-input position-relative form-group has-float-label">
+											<input type="number" class="form-control" name="numberOfChildren"
+												placeholder="Number of Children">
+											<label>Number of Children</label>
+										</div>
 
-    <!-- Nationality Dropdown -->
-    <div class="wizard-form-input position-relative form-group has-float-label">
-      <select class="form-control" name="nationality">
-        <option value="Nigeria">Nigeria</option>
-        <!-- Add more options for other nationalities if needed -->
-      </select>
-      <label>Nationality</label>
-    </div>
+										<!-- Nationality Dropdown -->
+										<div class="wizard-form-input position-relative form-group has-float-label">
+											<select class="form-control" name="nationality">
+												<option value="Nigeria">Nigeria</option>
+												<!-- Add more options for other nationalities if needed -->
+											</select>
+											<label>Nationality</label>
+										</div>
 
-    <!-- State of Origin Dropdown -->
-    <div class="wizard-form-input position-relative form-group has-float-label">
-      <select class="form-control" name="stateOfOrigin">
-        <option value="Niger">Niger State</option>
-        <!-- Add more options for other states if needed -->
-      </select>
-      <label>State of Origin</label>
-    </div>
+										<!-- State of Origin Dropdown -->
+										<div class="wizard-form-input position-relative form-group has-float-label">
+											<select class="form-control" name="stateOfOrigin">
+												<option value="Niger">Niger State</option>
+												<!-- Add more options for other states if needed -->
+											</select>
+											<label>State of Origin</label>
+										</div>
 
-    <!-- Local Govt Dropdown -->
-    <div class="wizard-form-input position-relative form-group has-float-label">
-      <select class="form-control" name="localGovt">
-        <option value="">Local Govt</option>
-        <option value="Local Govt 1">Local Govt 1</option>
-        <option value="Local Govt 2">Local Govt 2</option>
-        <!-- Add more options for all LGAs in Niger State -->
-      </select>
-      <label>Local Govt</label>
-    </div>
+										<!-- Local Govt Dropdown -->
+										<div class="wizard-form-input position-relative form-group has-float-label">
+											<select class="form-control" name="localGovt">
+												<option value="" disabled>Local Government Area</option>
+												<option value="Agaie">Agaie</option>
+												<option value="Agwara">Agwara</option>
+												<option value="Bida">Bida</option>
+												<option value="Borgu">Borgu</option>
+												<option value="Bosso">Bosso</option>
+												<option value="Chanchaga">Chanchaga</option>
+												<option value="Edati">Edati</option>
+												<option value="Gbako">Gbako</option>
+												<option value="Gurara">Gurara</option>
+												<option value="Katcha">Katcha</option>
+												<option value="Kontagora">Kontagora</option>
+												<option value="Lapai">Lapai</option>
+												<option value="Lavun">Lavun</option>
+												<option value="Magama">Magama</option>
+												<option value="Maradi">Maradi</option>
+												<option value="Mashegu">Mashegu</option>
+												<option value="Mokwa">Mokwa</option>
+												<option value="Munya">Munya</option>
+												<option value="Paikoro">Paikoro</option>
+												<option value="Rafi">Rafi</option>
+												<option value="Rijau">Rijau</option>
+												<option value="Shiroro">Shiroro</option>
+												<option value="Suleja">Suleja</option>
+												<option value="Tafa">Tafa</option>
+												<option value="Wushishi">Wushishi</option>
+												<!-- Add more options for all LGAs in Niger State -->
+											</select>
+											<label>Local Govt</label>
+										</div>
 
-    <!-- Home Town -->
-    <div class="wizard-form-input position-relative form-group has-float-label">
-      <input type="text" class="form-control" name="homeTown" placeholder="Home Town">
-      <label>Home Town</label>
-    </div>
+										<!-- Home Town -->
+										<div class="wizard-form-input position-relative form-group has-float-label">
+											<input type="text" class="form-control" name="homeTown"
+												placeholder="Home Town">
+											<label>Home Town</label>
+										</div>
 
-    <!-- Religion Dropdown -->
-    <div class="wizard-form-input position-relative form-group has-float-label">
-      <select class="form-control" name="religion">
-        <option value="">Religion</option>
-        <option value="Christianity">Christianity</option>
-        <option value="Islam">Islam</option>
-        <option value="Other">Other</option>
-        <!-- Add more options as needed -->
-      </select>
-      <label>Religion</label>
-    </div>
+										<!-- Religion Dropdown -->
+										<div class="wizard-form-input position-relative form-group has-float-label">
+											<select class="form-control" name="religion">
+												<option value="">Religion</option>
+												<option value="Christianity">Christianity</option>
+												<option value="Islam">Islam</option>
+												<option value="Other">Other</option>
+												<!-- Add more options as needed -->
+											</select>
+											<label>Religion</label>
+										</div>
 
-    <!-- National ID Number -->
-    <div class="wizard-form-input position-relative form-group has-float-label">
-      <input type="text" class="form-control" name="nationalIdNumber" placeholder="National ID Number">
-      <label>National ID Number</label>
-    </div>
+										<!-- National ID Number -->
+										<div class="wizard-form-input position-relative form-group has-float-label">
+											<input type="text" class="form-control" name="nationalIdNumber"
+												placeholder="National ID Number">
+											<label>National ID Number</label>
+										</div>
 
-    <!-- Blood Group -->
-    <div class="wizard-form-input position-relative form-group has-float-label">
-      <input type="text" class="form-control" name="bloodGroup" placeholder="Blood Group">
-      <label>Blood Group</label>
-    </div>
-  </div>
+										<!-- Blood Group -->
+										<div class="wizard-form-input position-relative form-group has-float-label">
+											<input type="text" class="form-control" name="bloodGroup"
+												placeholder="Blood Group">
+											<label>Blood Group</label>
+										</div>
+									</div>
 
-  <div class="badge-selection">
-    <h3>Show country on your profile and badges</h3>
-    <label>
-      <input type="radio" checked="checked" name="radio" value="Yes">
-      <span class="checkmark">Yes</span>
-    </label>
-    <label>
-      <input type="radio" name="radio" value="No">
-      <span class="checkmark">No</span>
-    </label>
-  </div>
-</div>
+									<div class="badge-selection">
+										<h3>Show country on your profile and badges</h3>
+										<label>
+											<input type="radio" checked="checked" name="radio" value="Yes">
+											<span class="checkmark">Yes</span>
+										</label>
+										<label>
+											<input type="radio" name="radio" value="No">
+											<span class="checkmark">No</span>
+										</label>
+									</div>
+								</div>
 
 								<div class="wizard-footer">
-									<div class="wizard-imgbg">
+									<!-- <div class="wizard-imgbg">
 										<img src="assets/img/v3.png" alt="">
-									</div>
+									</div> -->
 									<div class="actions">
 										<ul>
-											<li><span class="js-btn-next" title="NEXT">NEXT <i class="fa fa-arrow-right"></i></span></li>
+											<li><span class="js-btn-next" title="NEXT">NEXT <i
+														class="fa fa-arrow-right"></i></span></li>
 										</ul>
 									</div>
 								</div>
@@ -240,7 +276,7 @@
 								<div class="wizard-content-item text-center">
 									<h2>Tax Residency</h2>
 									<p>Tell us about your Tax details. This is important
-									for both for us</p>
+										for both for us</p>
 								</div>
 								<div class="wizard-option-list wizard-content-form">
 									<ul>
@@ -322,7 +358,8 @@
 										<div class="row">
 											<div class="col-md-4">
 												<label>
-													<input type="checkbox" class="tax-check" checked value="Taxable in the US?">
+													<input type="checkbox" class="tax-check" checked
+														value="Taxable in the US?">
 													<span class="checkbo-box-border"></span>
 													<span class="texable-option">
 														Taxable in the US?
@@ -356,8 +393,10 @@
 									</div>
 									<div class="actions">
 										<ul>
-											<li><span class="js-btn-prev" title="BACK"><i class="fa fa-arrow-left"></i> BACK</span></li>
-											<li><span class="js-btn-next" title="NEXT">NEXT <i class="fa fa-arrow-right"></i></span></li>
+											<li><span class="js-btn-prev" title="BACK"><i class="fa fa-arrow-left"></i>
+													BACK</span></li>
+											<li><span class="js-btn-next" title="NEXT">NEXT <i
+														class="fa fa-arrow-right"></i></span></li>
 										</ul>
 									</div>
 								</div>
@@ -377,7 +416,7 @@
 								<div class="wizard-content-item text-center">
 									<h2>Indentity Documents</h2>
 									<p>Please take a salfie with your document so that it’s clearly
-									visible anddoses not cover your face.</p>
+										visible anddoses not cover your face.</p>
 								</div>
 								<div class="wizard-identity wizard-content-form">
 									<div class="row">
@@ -388,9 +427,10 @@
 												</div>
 												<div class="upload-option text-center">
 													<label for="file-images">Upload The Documents</label>
-													<input id="file-images" style="visibility:hidden; display: none;" type="file">
+													<input id="file-images" style="visibility:hidden; display: none;"
+														type="file">
 													<span>.jpg or .pdf should
-													be more than 500KB or 300PI</span>
+														be more than 500KB or 300PI</span>
 												</div>
 											</div>
 										</div>
@@ -409,8 +449,10 @@
 									</div>
 									<div class="actions">
 										<ul>
-											<li><span class="js-btn-prev" title="BACK"><i class="fa fa-arrow-left"></i> BACK</span></li>
-											<li><span class="js-btn-next" title="NEXT">NEXT <i class="fa fa-arrow-right"></i></span></li>
+											<li><span class="js-btn-prev" title="BACK"><i class="fa fa-arrow-left"></i>
+													BACK</span></li>
+											<li><span class="js-btn-next" title="NEXT">NEXT <i
+														class="fa fa-arrow-right"></i></span></li>
 										</ul>
 									</div>
 								</div>
@@ -430,7 +472,7 @@
 								<div class="wizard-content-item text-center">
 									<h2>Indentity Documents</h2>
 									<p>Please take a salfie with your document so that it’s clearly
-									visible anddoses not cover your face.</p>
+										visible anddoses not cover your face.</p>
 								</div>
 								<div class="identity-option wizard-content-form">
 									<ul>
@@ -484,8 +526,10 @@
 									</div>
 									<div class="actions">
 										<ul>
-											<li><span class="js-btn-prev" title="BACK"><i class="fa fa-arrow-left"></i> BACK</span></li>
-											<li><span class="js-btn-next" title="NEXT">NEXT <i class="fa fa-arrow-right"></i></span></li>
+											<li><span class="js-btn-prev" title="BACK"><i class="fa fa-arrow-left"></i>
+													BACK</span></li>
+											<li><span class="js-btn-next" title="NEXT">NEXT <i
+														class="fa fa-arrow-right"></i></span></li>
 										</ul>
 									</div>
 								</div>
@@ -506,7 +550,7 @@
 								<div class="wizard-content-item text-center">
 									<h2>Submit Final</h2>
 									<p>Please take a salfie with your document so that it’s clearly
-									visible anddoses not cover your face.</p>
+										visible anddoses not cover your face.</p>
 								</div>
 								<div class="wizard-submit-file-content wizard-content-form">
 									<div class="row">
@@ -526,7 +570,9 @@
 										<div class="col-md-6">
 											<div class="n-activity tooltip-info">
 												<label>
-													<i data-toggle="tooltip" data-placement="bottom" title="If you want your invoice address to a compnay. Leave blank to use full name" class="fa fa-info"></i>
+													<i data-toggle="tooltip" data-placement="bottom"
+														title="If you want your invoice address to a compnay. Leave blank to use full name"
+														class="fa fa-info"></i>
 													<input type="checkbox" class="net-check">
 													<span class="n-title">Network Activity</span>
 													<span class="net-check-border"></span>
@@ -583,15 +629,17 @@
 										</div>
 									</div>
 								</div>
-								
+
 								<div class="wizard-footer">
 									<div class="wizard-imgbg float-start">
 										<img src="assets/img/v5.png" alt="">
 									</div>
 									<div class="actions">
 										<ul>
-											<li><span class="js-btn-prev" title="BACK"><i class="fa fa-arrow-left"></i> BACK</span></li>
-											<li><button type="submit" id="submit-form" title="NEXT">SUMBIT <i class="fa fa-arrow-right"></i></button></li>
+											<li><span class="js-btn-prev" title="BACK"><i class="fa fa-arrow-left"></i>
+													BACK</span></li>
+											<li><button type="submit" id="submit-form" title="NEXT">SUMBIT <i
+														class="fa fa-arrow-right"></i></button></li>
 										</ul>
 									</div>
 								</div>
@@ -610,7 +658,7 @@
 	<script src="assets/js/switch.js"></script>
 	<script src="assets/js/main.js"></script>
 	<script>
-		$("#files").change(function() {
+		$("#files").change(function () {
 			filename = this.files[0].name
 			console.log(filename);
 		});
