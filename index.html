@@ -384,35 +384,108 @@
 									</div>
 								</div>
 								<div class="wizard-content-item text-center">
-									<h2>Indentity Documents</h2>
-									<p>Please take a salfie with your document so that it’s clearly
-										visible anddoses not cover your face.</p>
+									<h2>Employment Information</h2>
+									<p>Please fill in your employment Information</p>
 								</div>
-								<div class="wizard-identity wizard-content-form">
-									<div class="row">
-										<div class="col-md-6">
-											<div class="wizard-identity-box identity-upload text-center">
-												<div class="upload-icon">
-													<i class="fas fa-cloud-upload-alt"></i>
-												</div>
-												<div class="upload-option text-center">
-													<label for="file-images">Upload The Documents</label>
-													<input id="file-images" style="visibility:hidden; display: none;"
-														type="file">
-													<span>.jpg or .pdf should
-														be more than 500KB or 300PI</span>
-												</div>
-											</div>
-										</div>
-										<div class="col-md-6">
-											<div class="wizard-identity-box text-center">
-												<div class="wizard-identity-icon">
-													<img src="assets/img/vi1.png" alt="">
-												</div>
-											</div>
-										</div>
+								<div class="wizard-content-form">
+									<div class="wizard-form-field">
+									  <!-- Previous fields... -->
+								  
+									  <div class="wizard-form-input position-relative form-group has-float-label">
+										<input type="text" name="staffId" class="form-control" placeholder="Staff ID">
+										<label>Staff ID</label>
+									  </div>
+									  <div class="wizard-form-input position-relative form-group has-float-label">
+										<input type="date" name="dateOfEmployment" class="form-control">
+										<label>Date of Employment</label>
+									  </div>
+									  <div class="wizard-form-input position-relative form-group has-float-label">
+										<input type="date" name="dateOfPresentAppointment" class="form-control">
+										<label>Date of Present Appointment</label>
+									  </div>
+									  <div class="wizard-form-input position-relative form-group has-float-label">
+										<input type="date" name="confirmationDate" class="form-control">
+										<label>Confirmation Date into Service</label>
+									  </div>
+									  <div class="wizard-form-input position-relative form-group has-float-label">
+										<select name="MDA" class="form-control">
+										  <option value="">Ministry/Department/Agency (MDA)</option>
+										  <!-- List of MDAs as options -->
+										  <!-- Add options here -->
+										</select>
+										<label>Ministry/Department/Agency (MDA)</label>
+									  </div>
+									  <div class="wizard-form-input position-relative form-group has-float-label">
+										<select name="unit" class="form-control">
+										  <option value="">Unit</option>
+										  <!-- List of units as options -->
+										  <!-- Add options here -->
+										</select>
+										<label>Unit</label>
+									  </div>
+									  <div class="wizard-form-input position-relative form-group has-float-label">
+										<input type="text" name="supervisor" class="form-control" placeholder="Supervisor">
+										<label>Supervisor</label>
+									  </div>
+									  <div class="wizard-form-input position-relative form-group has-float-label">
+										<select name="gradeLevel" class="form-control">
+										  <option value="">Grade Level</option>
+										  <!-- List of grade levels as options -->
+										  <!-- Add options here -->
+										</select>
+										<label>Grade Level</label>
+									  </div>
+									  <div class="wizard-form-input position-relative form-group has-float-label">
+										<select name="step" class="form-control">
+										  <option value="">Step</option>
+										  <!-- List of steps as options -->
+										  <!-- Add options here -->
+										</select>
+										<label>Step</label>
+									  </div>
+									  <div class="wizard-form-input position-relative form-group has-float-label">
+										<select name="cadre" class="form-control">
+										  <option value="">Cadre/Rank</option>
+										  <!-- List of cadres/ranks as options -->
+										  <!-- Add options here -->
+										</select>
+										<label>Cadre/Rank</label>
+									  </div>
+									  <div class="wizard-form-input position-relative form-group has-float-label">
+										<input type="date" name="incrementalDate" class="form-control">
+										<label>Incremental Date</label>
+									  </div>
+									  <div class="wizard-form-input position-relative form-group has-float-label">
+										<select name="tradeUnion" class="form-control">
+										  <option value="">Trade Union</option>
+										  <!-- List of trade unions as options -->
+										  <!-- Add options here -->
+										</select>
+										<label>Trade Union</label>
+									  </div>
+									  <div class="wizard-form-input position-relative form-group has-float-label">
+										<select name="cooperativeSocieties" class="form-control">
+										  <option value="">Co-operative Societies</option>
+										  <!-- List of co-operative societies as options -->
+										  <!-- Add options here -->
+										</select>
+										<label>Co-operative Societies</label>
+									  </div>
+									  <div class="wizard-form-input position-relative form-group has-float-label">
+										<select name="employmentType" class="form-control">
+										  <option value="">Employment Type</option>
+										  <!-- List of employment types as options -->
+										  <!-- Add options here -->
+										</select>
+										<label>Employment Type</label>
+									  </div>
+									  <div class="wizard-form-input position-relative form-group has-float-label">
+										<input type="date" name="contractExitDate" class="form-control">
+										<label>Contract Appointment Exit Date (only for contract staff)</label>
+									  </div>
 									</div>
-								</div>
+								  </div>
+								  
 								<div class="wizard-footer">
 									<div class="wizard-imgbg">
 										<img src="assets/img/v3.png" alt="">
@@ -444,52 +517,212 @@
 									<p>Please take a salfie with your document so that it’s clearly
 										visible anddoses not cover your face.</p>
 								</div>
-								<div class="identity-option wizard-content-form">
-									<ul>
-										<li>
-											<label>
-												<input type="checkbox" class="identity-check" checked="checked">
-												<span class="identity-label"></span>Investability Quotient Percentile
-												<span class="checkmark-border"></span>
-											</label>
-										</li>
-										<li>
-											<label>
-												<input type="checkbox" class="identity-check">
-												<span class="identity-label"></span>Investability Quotient Percentile
-												<span class="checkmark-border"></span>
-											</label>
-										</li>
-										<li>
-											<label>
-												<input type="checkbox" class="identity-check">
-												<span class="identity-label"></span>Investability Quotient Percentile
-												<span class="checkmark-border"></span>
-											</label>
-										</li>
-										<li>
-											<label>
-												<input type="checkbox" class="identity-check">
-												<span class="identity-label"></span>Investability Quotient Percentile
-												<span class="checkmark-border"></span>
-											</label>
-										</li>
-										<li>
-											<label>
-												<input type="checkbox" class="identity-check">
-												<span class="identity-label"></span>Investability Quotient Percentile
-												<span class="checkmark-border"></span>
-											</label>
-										</li>
-										<li>
-											<label>
-												<input type="checkbox" class="identity-check">
-												<span class="identity-label"></span>Investability Quotient Percentile
-												<span class="checkmark-border"></span>
-											</label>
-										</li>
-									</ul>
-								</div>
+								<!-- Bank Account Information -->
+<div class="wizard-content-form">
+	<div class="wizard-form-field">
+	  <!-- Previous fields... -->
+  
+	  <div class="wizard-form-input position-relative form-group has-float-label">
+		<select name="bankName" class="form-control">
+		  <option value="">Bank Name</option>
+		  <!-- List of banks in Nigeria as options -->
+		  <!-- Add options here -->
+		</select>
+		<label>Bank Name</label>
+	  </div>
+	  <div class="wizard-form-input position-relative form-group has-float-label">
+		<input type="text" name="bankBranch" class="form-control" placeholder="Bank Branch">
+		<label>Bank Branch</label>
+	  </div>
+	  <div class="wizard-form-input position-relative form-group has-float-label">
+		<input type="text" name="accountNumber" class="form-control" placeholder="Account Number">
+		<label>Account Number</label>
+	  </div>
+	  <div class="wizard-form-input position-relative form-group has-float-label">
+		<select name="accountType" class="form-control">
+		  <option value="">Type of Account</option>
+		  <option value="current">Current</option>
+		  <option value="savings">Savings</option>
+		</select>
+		<label>Type of Account</label>
+	  </div>
+	  <div class="wizard-form-input position-relative form-group has-float-label">
+		<input type="text" name="pfa" class="form-control" placeholder="Pension Fund Administrator (PFA)">
+		<label>Pension Fund Administrator (PFA)</label>
+	  </div>
+	  <div class="wizard-form-input position-relative form-group has-float-label">
+		<input type="text" name="pin" class="form-control" placeholder="Pension Identification No(PIN)">
+		<label>Pension Identification No(PIN)</label>
+	  </div>
+	</div>
+  </div>
+  
+  <!-- Next of Kin Information -->
+  <div class="wizard-content-form">
+	<div class="wizard-form-field">
+	  <div class="wizard-form-input position-relative form-group has-float-label">
+		<input type="text" name="nextOfKinFullName" class="form-control" placeholder="Full Name">
+		<label>Full Name</label>
+	  </div>
+	  <div class="wizard-form-input position-relative form-group has-float-label">
+		<textarea name="nextOfKinAddress" class="form-control" placeholder="Address"></textarea>
+		<label>Address</label>
+	  </div>
+	  <div class="row">
+		<div class="col-md-6">
+		  <div class="wizard-form-input position-relative form-group has-float-label">
+			<input type="text" name="nextOfKinCity" class="form-control" placeholder="City">
+			<label>City</label>
+		  </div>
+		</div>
+		<div class="col-md-6">
+		  <div class="wizard-form-input position-relative form-group has-float-label">
+			<select name="nextOfKinState" class="form-control">
+			  <option value="">State</option>
+			  <!-- List of states in Nigeria as options -->
+			  <!-- Add options here -->
+			</select>
+			<label>State</label>
+		  </div>
+		</div>
+	  </div>
+	  <div class="row">
+		<div class="col-md-6">
+		  <div class="wizard-form-input position-relative form-group has-float-label">
+			<select name="nextOfKinLGA" class="form-control">
+			  <option value="">LGA</option>
+			  <!-- List of LGAs in Nigeria as options -->
+			  <!-- Add options here -->
+			</select>
+			<label>LGA</label>
+		  </div>
+		</div>
+		<div class="col-md-6">
+		  <div class="wizard-form-input position-relative form-group has-float-label">
+			<select name="nextOfKinRelationship" class="form-control">
+			  <option value="">Relationship</option>
+			  <!-- List of possible relationships as options -->
+			  <!-- Add options here -->
+			</select>
+			<label>Relationship</label>
+		  </div>
+		</div>
+	  </div>
+	  <div class="wizard-form-input position-relative form-group has-float-label">
+		<input type="text" name="nextOfKinPhoneNumber" class="form-control" placeholder="Phone Number">
+		<label>Phone Number</label>
+	  </div>
+	</div>
+  </div>
+  
+  <!-- Spouse Information -->
+  <div class="wizard-content-form">
+	<div class="wizard-form-field">
+	  <div class="wizard-form-input position-relative form-group has-float-label">
+		<input type="text" name="spouseFullName" class="form-control" placeholder="Full Name">
+		<label>Full Name</label>
+	  </div>
+	  <div class="wizard-form-input position-relative form-group has-float-label">
+		<textarea name="spouseAddress" class="form-control" placeholder="Address"></textarea>
+		<label>Address</label>
+	  </div>
+	  <div class="row">
+		<div class="col-md-6">
+		  <div class="wizard-form-input position-relative form-group has-float-label">
+			<input type="text" name="spouseCity" class="form-control" placeholder="City">
+			<label>City</label>
+		  </div>
+		</div>
+		<div class="col-md-6">
+		  <div class="wizard-form-input position-relative form-group has-float-label">
+			<select name="spouseState" class="form-control">
+			  <option value="">State</option>
+			  <!-- List of states in Nigeria as options -->
+			  <!-- Add options here -->
+			</select>
+			<label>State</label>
+		  </div>
+		</div>
+	  </div>
+	  <div class="row">
+		<div class="col-md-6">
+		  <div class="wizard-form-input position-relative form-group has-float-label">
+			<select name="spouseLGA" class="form-control">
+			  <option value="">LGA</option>
+			  <!-- List of LGAs in Nigeria as options -->
+			  <!-- Add options here -->
+			</select>
+			<label>LGA</label>
+		  </div>
+		</div>
+		<div class="col-md-6">
+		  <div class="wizard-form-input position-relative form-group has-float-label">
+			<input type="text" name="spousePhoneNumber" class="form-control" placeholder="Phone Number">
+			<label>Phone Number</label>
+		  </div>
+		</div>
+	  </div>
+	</div>
+  </div>
+  
+  <!-- Emergency Contact -->
+  <div class="wizard-content-form">
+	<div class="wizard-form-field">
+	  <div class="wizard-form-input position-relative form-group has-float-label">
+		<input type="text" name="emergencyContactFullName" class="form-control" placeholder="Full Name">
+		<label>Full Name</label>
+	  </div>
+	  <div class="wizard-form-input position-relative form-group has-float-label">
+		<textarea name="emergencyContactAddress" class="form-control" placeholder="Address"></textarea>
+		<label>Address</label>
+	  </div>
+	  <div class="row">
+		<div class="col-md-6">
+		  <div class="wizard-form-input position-relative form-group has-float-label">
+			<input type="text" name="emergencyContactCity" class="form-control" placeholder="City">
+			<label>City</label>
+		  </div>
+		</div>
+		<div class="col-md-6">
+		  <div class="wizard-form-input position-relative form-group has-float-label">
+			<select name="emergencyContactState" class="form-control">
+			  <option value="">State</option>
+			  <!-- List of states in Nigeria as options -->
+			  <!-- Add options here -->
+			</select>
+			<label>State</label>
+		  </div>
+		</div>
+	  </div>
+	  <div class="row">
+		<div class="col-md-6">
+		  <div class="wizard-form-input position-relative form-group has-float-label">
+			<select name="emergencyContactLGA" class="form-control">
+			  <option value="">LGA</option>
+			  <!-- List of LGAs in Nigeria as options -->
+			  <!-- Add options here -->
+			</select>
+			<label>LGA</label>
+		  </div>
+		</div>
+		<div class="col-md-6">
+		  <div class="wizard-form-input position-relative form-group has-float-label">
+			<select name="emergencyContactRelationship" class="form-control">
+			  <option value="">Relationship</option>
+			  <!-- List of possible relationships as options -->
+			  <!-- Add options here -->
+			</select>
+			<label>Relationship</label>
+		  </div>
+		</div>
+	  </div>
+	  <div class="wizard-form-input position-relative form-group has-float-label">
+		<input type="text" name="emergencyContactPhoneNumber" class="form-control" placeholder="Phone Number">
+		<label>Phone Number</label>
+	  </div>
+	</div>
+  </div>
+  
 								<div class="wizard-footer">
 									<div class="wizard-imgbg">
 										<img src="assets/img/v4.png" alt="">
